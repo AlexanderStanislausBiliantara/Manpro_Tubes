@@ -1,0 +1,186 @@
+
+.cires_icon {
+    width: 200px;
+    height: 200px;
+}
+
+.cires_text{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 25px;
+    color: darkslategray;
+    height: 100px;
+}
+
+header {
+    height: 8vh;
+    background-color: #6d8f5d;
+    display: flex;
+    align-items: center;
+}
+
+.login {
+    margin-left: auto;
+    font-weight: bold;
+    margin-right: 15px;
+    text-decoration: none;
+    color: #4b5845;
+    font-size: 20px;
+    background-color: white;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 100px;
+}
+
+.login:hover{
+    background-color: rgb(66, 81, 60);
+    transition-duration: 200ms;
+    cursor: pointer;
+    color: white;
+}
+
+.login > p {
+    padding: 15px;
+}
+
+.header_buttons {
+    display: flex;
+    margin-left: auto;
+    padding-right: 10px;
+}
+
+
+.banner_end {
+    height: 6vh;
+    background-color: #6d8f5d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui;
+}
+
+.container{
+    grid-template-rows: 25% 75%;
+}
+
+.searchbar_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 5vh 5vh 5vh 5vh;
+    background-color: beige;
+}
+
+.result_container img {
+    width: calc(100vw + 100px);
+    height: 110vh;
+    mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+    margin-left: -800px;
+}
+
+.tipe{
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 1vw;
+}
+
+.checkin{
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+    margin-left: 1vw;
+}
+
+.checkout{
+    display: grid;
+    grid-column: 3;
+    grid-row: 2;
+    margin-left: 1vw;
+}
+.hargarendah{
+    display: grid;
+    grid-column: 4;
+    grid-row: 2;
+    margin-left: 1vw;
+}
+.hargatinggi{
+    display: grid;
+    grid-column: 5;
+    grid-row: 2;
+    margin-left: 1vw;
+}
+.rating{
+    display: grid;
+    grid-column: 6;
+    grid-row: 2;
+    margin-left: 1vw;
+}
+
+#tipe{
+    display: grid;
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 1vw;
+}
+#check_in_date{
+    display: grid;
+    grid-column: 2;
+    grid-row: 3;
+    margin-left: 1vw;
+}
+#check_out_date{
+    display: grid;
+    grid-column: 3;
+    grid-row: 3;
+    margin-left: 1vw;
+}
+
+#lowestprice{
+    display: grid;
+    grid-column: 4;
+    grid-row: 3;
+    margin-left: 1vw;
+}
+
+#highestprice{
+    display: grid;
+    grid-column: 5;
+    grid-row: 3;
+    margin-left: 1vw;
+}
+
+#rating{
+    display: grid;
+    grid-column: 6;
+    grid-row: 3;
+    margin-left: 1vw;
+}
+
+button{
+    margin-left: 47%;
+    width: 5vw;
+    margin-top: 7.5%;
+    position: absolute;
+}
+
+h2{
+    color: #6d8f5d;
+    position: absolute;
+    font-size: 1.5rem;
+    padding-left: 40%;
+    margin-top: 0%;
+}
+
+input, select{
+    width: 15vw;
+    height: 4vh;
+}
