@@ -1,19 +1,17 @@
-/* General Styles */
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9; /* Soft background color */
-    color: #333; /* Dark text for readability */
+    background-color: #f9f9f9;
+    color: #333; 
 }
 
-/* Header */
 header {
     height: 8vh;
-    background-color: #4b635e; /* Harmonious green */
+    background-color: #4b635e;
     display: flex;
     align-items: center;
     padding: 0 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .cires_icon {
@@ -45,10 +43,9 @@ header {
 
 .login:hover {
     background-color: #4b5845;
-    transform: scale(1.05); /* Subtle zoom effect */
+    transform: scale(1.05);
 }
 
-/* Page Container */
 .container {
     padding: 20px;
     text-align: center;
@@ -61,11 +58,10 @@ h2 {
     font-weight: bold;
 }
 
-/* Search Bar */
 .searchbar_container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 10px; /* Add spacing between elements */
+    gap: 10px;
     padding: 20px;
     background-color: #f0f4f0;
     border-radius: 10px;
@@ -88,7 +84,7 @@ input:focus, select:focus {
 }
 
 button {
-    grid-column: 3 / span 2; /* Center the button */
+    grid-column: 3 / span 2; 
     height: 40px;
     background-color: #4b635e;
     color: white;
@@ -105,7 +101,6 @@ button:hover {
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Result Section */
 .result_container img {
     width: 100%;
     height: auto;
@@ -113,6 +108,7 @@ button:hover {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     object-fit: cover;
+    opacity: 50%;
 }
 
 label{
@@ -121,18 +117,4 @@ label{
 
 button{
     margin-top: 10px;
-}
-
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .searchbar_container {
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
-    }
-
-    button {
-        grid-column: 1 / span 2;
-    }
 }
