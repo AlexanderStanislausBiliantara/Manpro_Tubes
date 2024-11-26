@@ -44,27 +44,29 @@ function addUnit(){
 }
 
 (function(){
-    const lantai = document.getElementById('noLantai').value;
-    const noUnit = document.getElementById('noUnit').value;
+    const lantai = document.getElementById('noLantai');
+    const noUnit = document.getElementById('noUnit');
 
     lantai.addEventListener('input', function(){
-        const value = lantai.value;
-        if(value <= 0){
-            this.value = '';
+        const valueLantai = lantai.value;
+        if(valueLantai <= 0){
+            this.value = "";
         }
-        else if(val > 20){
+        else if(valueLantai > 20){
             this.value = 20;
         }
+
     });
 
     noUnit.addEventListener('input', function(){
-        const value = noUnit.value;
-        if(value<=0){
-            this.value = '';
+        const valueUnit = noUnit.value;
+        if(valueUnit<=0){
+            this.value = "";
         }
-        else if(value>20){
-            this.value = 20;
+        else if(valueUnit>200){
+            this.value = 200;
         }
+
     })
 })();
 

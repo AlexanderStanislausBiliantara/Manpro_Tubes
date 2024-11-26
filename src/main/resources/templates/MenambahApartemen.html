@@ -3,12 +3,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CiRes+</title>
-    <link rel="stylesheet" href="../static/css/MenambahApartemen.css">
-    <script src="../static/js/MenambahApartemen.js" defer></script>
+    <script th:src="@{/js/MenambahApartemen.js}" defer></script>
+    <link rel="stylesheet" th:href="@{/css/MenambahApartemen.css}">
 </head>
 <body>
     <header>
-        <img class="cires_icon" src="../static/assets/LogoCiresBaru.png" />
+        <img class="cires_icon" th:src="@{/assets/LogoCiresBaru.png}"/>
         <div class="header_buttons">
             <p class="welcome-message">Selamat Datang, Agen John Doe!</p>
         </div>
