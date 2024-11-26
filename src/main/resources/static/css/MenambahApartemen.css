@@ -198,3 +198,19 @@ button{
     margin-top: 10px;
     height: 10%;
 }
+
+.info-unit{
+    height: 100%;
+    display: flex;
+}
+
+.info-unit-2 {
+    margin-top: 10px;
+    height: 10%;
+}
+
+/* .info-unit-2{
+    margin-top: 10px;
+    height: 10%;
+} */
+

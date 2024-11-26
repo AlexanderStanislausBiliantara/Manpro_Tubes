@@ -22,7 +22,6 @@ public class JdbcRepositoryAgen implements AgenRepository {
         // String namaTower;
         String sql = "INSERT INTO Unit (kodeUnit, tipe, noUnit, status, tarif, NIKAgen, noLantai, namaTower) VALUES (?,?,?,?,?,?,?,?)";
         jdbcTemplate.update(sql, kodeUnit, tipe, noUnit, status, tarif, nikAgen, noLantai, namaTower);
-        
     }
     
 }
