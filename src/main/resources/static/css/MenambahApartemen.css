@@ -114,6 +114,11 @@ button:hover {
     opacity: 50%;
 }
 
+.welcome-message{
+    color: white;
+
+}
+
 label{
     margin-top: 10px;
 }
@@ -163,8 +168,8 @@ button{
     align-items: center;
 }
 
-.new-unit{
-    display: flex;
+#new-unit{
+    display: none;
     width: 50%;
     height: 25%;
     border: 2px solid black;
@@ -172,16 +177,24 @@ button{
     padding-left: 2rem;
 }
 
-#label-kode{
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-#kode-unit{
-    font-size: 2rem;
+.info-kode-unit{
+    font-size: 20px;
     font-weight: bold;
 }
 
 .info-new-unit{
-    gap: 10px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-unit{
+    height: 100%;
+    display: flex;
+}
+
+.info-unit-2{
+    margin-top: 10px;
+    height: 10%;
 }

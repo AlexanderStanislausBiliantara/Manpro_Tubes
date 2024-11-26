@@ -7,10 +7,66 @@ function closePopUp() {
 }
 
 function addUnit(){
-    const newDiv = document.createElement('div');
-    newDiv.classList.add('new-unit');
-    newDiv.textContent = "New Unit Added"
+    const unit = document.getElementById('new-unit');
+    const newUnit = unit.cloneNode(true);
+    newUnit.style.display = 'flex';
+    document.getElementById('result_container').appendChild(newUnit);
 
-    document.getElementById('result_container').appendChild(newDiv);
+    const tower = document.getElementById('tower').value;
+    let lantai = document.getElementById('noLantai').value;
+    let noUnit = document.getElementById('noUnit').value;
+    const harga = document.getElementById('tarif').value;
+    const tipeUnit = document.getElementById('tipe').value;
+
+    let kodeUnit = tower;
+
+    if(lantai<10){
+        kodeUnit = kodeUnit+'0'+lantai;
+    }
+    else{
+        kodeUnit = kodeUnit+lantai;
+    }
+
+    if(noUnit<100){ 
+        kodeUnit = kodeUnit+'0'+noUnit;
+    }
+    else{
+        kodeUnit = kodeUnit+noUnit;
+    }
+
+
+    document.getElementById('kode-unit').textContent = kodeUnit;
+    document.getElementById('tower-unit').textContent   = tower;
+    document.getElementById('lantai').textContent   = lantai;
+    document.getElementById('no-unit').textContent  = noUnit;
+    document.getElementById('harga-unit').textContent   = harga;
+    document.getElementById('tipe-unit').textContent    = tipeUnit;
 }
+
+(function(){
+    const lantai = document.getElementById('noLantai').value;
+    const noUnit = document.getElementById('noUnit').value;
+
+    lantai.addEventListener('input', function(){
+        const value = lantai.value;
+        if(value <= 0){
+            this.value = '';
+        }
+        else if(val > 20){
+            this.value = 20;
+        }
+    });
+
+    noUnit.addEventListener('input', function(){
+        const value = noUnit.value;
+        if(value<=0){
+            this.value = '';
+        }
+        else if(value>20){
+            this.value = 20;
+        }
+    })
+})();
+
+
 

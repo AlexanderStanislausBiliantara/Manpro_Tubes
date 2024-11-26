@@ -10,8 +10,7 @@
     <header>
         <img class="cires_icon" src="../static/assets/LogoCiresBaru.png" />
         <div class="header_buttons">
-            <a class="login" href="login_page.html"><p>Masuk</p></a>
-            <a class="login" href="daftar.html"><p>Daftar</p></a>
+            <p class="welcome-message">Selamat Datang, Agen John Doe!</p>
         </div>
     </header>
     <div class="container">
@@ -25,9 +24,9 @@
                 <option value="D">D</option>
             </select>
             <label for="noLantai" class="checkin">Lantai</label>
-            <input type="number" id="noLantai">
+            <input type="number" min="1" max="20" id="noLantai" required>
             <label for="noUnit" class="checkout">Nomor Unit</label>
-            <input type="type" id="noUnit">
+            <input type="number" min="1" max="200" id="noUnit" required>
 
             <label for="tipe" class="tipe">Tipe Unit</label>
             <select name="Tipe apartemen" id="tipe">
@@ -35,25 +34,48 @@
                 <option value="2BR">2BR</option>
             </select>
             <label for="tarif" class="tarif">Harga</label>
-            <input type="text" id="tarif">
+            <input type="text" id="tarif" required>
             <button id="button-tambahkan" onclick="openPopUp(), addUnit()">Tambahkan</button>
         </div>
     </div>
 
     <div id="result_container">
-        <div id="new-unit" class="new-unit">
-           <div class="info-new-unit">
-                <div>
-                    <p id="label-kode">Kode Unit: </p>
-                    <p id="kode-unit">XX-XX-XX</p>
-                    <p>Rp</p>
-                    <p>Harga</p>
+        
+    </div>
+
+    <div id="new-unit" >
+        <div class="info-new-unit">
+            <div class="info-kode-unit">
+                <p id="label-kode">Kode Unit: </p>
+                <p id="kode-unit">XX-XX-XX</p>
+            </div>
+
+            <div class="info-unit-2">
+                <div class="info-unit">
+                    <span>Tower: </span>
+                    <span id="tower-unit">towerUnit</span>
                 </div>
-           </div>
-
-           <div>
-
-           </div>
+                    
+                <div class="info-unit">
+                    <span>Lantai: </span>
+                    <span id="lantai">lantaiUnit</span>
+                </div>
+    
+                <div class="info-unit">
+                    <span>No: </span>
+                    <span id="no-unit">noUnit</span>
+                </div>
+    
+                <div class="info-unit">
+                    <span>Harga: Rp</span>
+                    <span id="harga-unit">Harga</span>
+                </div>
+    
+                <div class="info-unit">
+                    <span>Tipe Unit: </span>
+                    <span id="tipe-unit">tipeUnit</span>
+                </div>
+            </div>
         </div>
     </div>
 
